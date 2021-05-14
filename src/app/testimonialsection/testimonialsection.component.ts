@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import $ from '../../assets/js/vendor/jquery.js'
+
+declare const sliders: any;
 
 @Component({
   selector: 'app-testimonialsection',
@@ -12,13 +13,7 @@ export class TestimonialsectionComponent implements OnInit {
 
   ngOnInit(): void {
     // Testimonial Slider
-  $('.hero-slider').slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    infinite: true,
-    slidesToShow: 1,
-  });
+    sliders()
   }
 
 }

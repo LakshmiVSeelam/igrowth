@@ -3,6 +3,13 @@ import {
 } from '@angular/core';
 import $ from '../assets/js/vendor/jquery.js'
 
+declare const sliders: any;
+declare const scrollUp: any;
+declare const magnificPopups: any;
+
+
+ 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,12 +19,12 @@ export class AppComponent {
 
   title = 'igrowth';
   ngOnInit() {
-
+    
+    scrollUp()
     // header sticky
     var sticky = $('.header-area')
     var windows = $(window);
     windows.on('scroll', function () {
-      console.log('////')
       var scroll = windows.scrollTop();
       if (scroll < 400) {
         sticky.removeClass('stick');
@@ -45,45 +52,8 @@ export class AppComponent {
       }
     });
 
-    $('.feature-slider, .case-slider, .testimonial-slider').slick({
-      arrows: false,
-      infinite: true,
-      slidesToShow: 3,
-      responsive: [{
-          breakpoint: 950,
-          settings: {
-            slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 750,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-
-
-    $('[data-scroll]').on('click', function (e) {
-      e.preventDefault();
-      var link = this;
-      $.smoothScroll({
-        speed: 1000,
-        scrollTarget: link.hash,
-        offset: -90,
-      });
-    });
-    /*--
-      Scroll Up
-    -----------------------------------*/
-    $.scrollUp({
-      easingType: 'linear',
-      scrollSpeed: 900,
-      animation: 'fade',
-      scrollText: '<i class="zmdi zmdi-chevron-up"></i>',
-    });
-
+    sliders()
+    magnificPopups()
 
   }
 }
