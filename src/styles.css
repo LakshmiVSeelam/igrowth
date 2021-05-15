@@ -858,7 +858,7 @@ form {
   left: 0;
   right: 0;
   top: 8px;
-  background-color: #fff;
+  background-color: #001854;
   z-index: 99999;
 }
 
@@ -872,7 +872,7 @@ form {
 
 .header-area.stick .logo {
   display: block;
-  margin: 21px 0 22px;
+  margin: 10px 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -919,7 +919,7 @@ form {
 
 .header-area .logo {
   display: block;
-  margin: 31px 0 32px;
+  margin: 10px 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -936,9 +936,9 @@ form {
   }
 }
 
-.header-area .logo img {
+/* .header-area .logo img {
   width: 100%;
-}
+} */
 
 /*-- Animation For Stick Menu --*/
 @-webkit-keyframes fadeInDown {
@@ -1161,7 +1161,7 @@ form {
   display: block;
   text-transform: uppercase;
   font-size: 14px;
-  color: #2f2f2f;
+  color: #fff;
   line-height: 22px;
   font-weight: 500;
   margin: 3px 0 2px;

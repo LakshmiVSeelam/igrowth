@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
 
   nav_items = [
-    {name: "Home", link : "/"},
-    {name: "About", link : "about"},
-    {name: "Services", link : "services"},
-    {name: "Contact", link : "contact"}
+    {name: "Home", link : ""},
+    {name: "About", link : "/about"},
+    {name: "Services", link : "/services"},
+    {name: "Contact", link : "/contact"}
   ]
   constructor() { }
 

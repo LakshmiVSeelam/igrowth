@@ -19,6 +19,8 @@ import { CasestudysectionComponent } from './casestudysection/casestudysection.c
 import { PricingsectionComponent } from './pricingsection/pricingsection.component';
 import { TestimonialsectionComponent } from './testimonialsection/testimonialsection.component';
 import { BlogsectionComponent } from './blogsection/blogsection.component';
+import { PagebannerComponent } from './pagebanner/pagebanner.component';
+import { TeamsectionComponent } from './teamsection/teamsection.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { BlogsectionComponent } from './blogsection/blogsection.component';
     CasestudysectionComponent,
     PricingsectionComponent,
     TestimonialsectionComponent,
-    BlogsectionComponent
+    BlogsectionComponent,
+    PagebannerComponent,
+    TeamsectionComponent
   ],
   imports: [
     BrowserModule,

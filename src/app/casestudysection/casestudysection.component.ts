@@ -12,11 +12,7 @@ export class CasestudysectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    /*-- Image --*/
-  var imagePopup = $('.image-popup');
-  imagePopup.magnificPopup({
-    type: 'image',
-  });
+  
   }
 
 }

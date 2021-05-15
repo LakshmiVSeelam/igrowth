@@ -2,13 +2,14 @@ import {
   Component
 } from '@angular/core';
 import $ from '../assets/js/vendor/jquery.js'
+import {Router} from '@angular/router';
 
 declare const sliders: any;
 declare const scrollUp: any;
 declare const magnificPopups: any;
 
 
- 
+
 
 @Component({
   selector: 'app-root',
@@ -18,8 +19,17 @@ declare const magnificPopups: any;
 export class AppComponent {
 
   title = 'igrowth';
+
+  constructor(router: Router) {
+    // decide what to do when this event is triggered.
+    router.events.subscribe(val => {
+      var headerHight = $('.header-area').height();
+      $('.hero-area, .page-banner-area').css('margin-top', headerHight + 'px ');
+    });
+  }
+
   ngOnInit() {
-    
+
     scrollUp()
     // header sticky
     var sticky = $('.header-area')
@@ -33,6 +43,7 @@ export class AppComponent {
       }
     });
 
+    
 
     // Header Height For Hero Area Top Spac
     windows.on("resize", function () {
@@ -56,4 +67,6 @@ export class AppComponent {
     magnificPopups()
 
   }
+
+  
 }
