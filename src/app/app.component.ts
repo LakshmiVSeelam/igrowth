@@ -1,8 +1,10 @@
 import {
   Component
 } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
 import $ from '../assets/js/vendor/jquery.js'
-import {Router} from '@angular/router';
+import {NavigationEnd, Router} from '@angular/router';
 
 declare const sliders: any;
 declare const scrollUp: any;
@@ -20,12 +22,24 @@ export class AppComponent {
 
   title = 'igrowth';
 
-  constructor(router: Router) {
-    // decide what to do when this event is triggered.
+  pagetitles = {
+    '/' : 'Home | Igrowth',
+    '/about' : 'About | Igrowth',
+    '/services' : 'Services | Igrowth',
+    '/contact' : 'Contact | Igrowth'
+  }
+
+  constructor(router: Router, private titleService:Title) {
     router.events.subscribe(val => {
       var headerHight = $('.header-area').height();
       $('.hero-area, .page-banner-area').css('margin-top', headerHight + 'px ');
+
+      if(val instanceof NavigationEnd){
+        this.titleService.setTitle(this.pagetitles[val.url]);
+      }
     });
+
+    
   }
 
   ngOnInit() {
