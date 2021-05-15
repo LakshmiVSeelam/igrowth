@@ -1,6 +1,11 @@
 @import url("assets/css/montserrat.css");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 
+
+/* light blue : #5ebed9 */
+/* dark blue : #001854 */
+/* orange : #eea11d */
+/* red shade : #b42251 */
 /*-- Common Style --*/
 body {
   line-height: 24px;
@@ -791,7 +796,7 @@ form {
 }
 
 .input-box input[type="submit"]:hover {
-  background-color: #26547c;
+  background-color: #0a1854;
   color: #fff;
 }
 
@@ -842,7 +847,7 @@ form {
 }
 
 .header-top-bar span.navy {
-  background-color: #26547c;
+  background-color: #eea11d;
 }
 
 .header-top-bar span.red {
@@ -1340,7 +1345,7 @@ form {
   line-height: 24px;
   display: inline-block;
   font-family: Montserrat;
-  background-color: #5ebed9;
+  background-color: #0a1854;
   color: #fff;
   border-radius: 5px;
   text-transform: uppercase;
@@ -1357,7 +1362,7 @@ form {
 }
 
 .hero-item .content a:hover {
-  background-color: #05b167;
+  background-color: #b42251;
 }
 
 .hero-item .images {
@@ -1568,11 +1573,11 @@ form {
 }
 
 .single-feature.navy {
-  background-color: #26547c;
+  background-color: #0a1854;
 }
 
 .single-feature.navy img {
-  background-color: #26547c;
+  background-color: #0a1854;
 }
 
 /*----------------------------------------*/
@@ -1655,7 +1660,7 @@ form {
 }
 
 .video-content h1 span {
-  color: #26547c;
+  color: #0a1854;
 }
 
 .video-content p {
@@ -1679,7 +1684,7 @@ form {
   line-height: 24px;
   display: inline-block;
   font-family: Montserrat;
-  background-color: #26547c;
+  background-color: #0a1854;
   color: #fff;
   border-radius: 5px;
   text-transform: uppercase;
@@ -1694,7 +1699,7 @@ form {
 }
 
 .video-content .read-more:hover {
-  background-color: #204768;
+  background-color: #b42251;
 }
 
 /*----------------------------------------*/
@@ -1833,7 +1838,7 @@ form {
 /*  7.  Solutions Area
 /*----------------------------------------*/
 .solutions-area {
-  background-color: #26547c;
+  background-color: #0a1854;
 }
 
 .solutions-image img {
@@ -1929,7 +1934,7 @@ form {
 }
 
 .solutions-content .read-more:hover {
-  background-color: #05b167;
+  background-color: #b42251;
 }
 
 /*----------------------------------------*/
@@ -2066,7 +2071,7 @@ form {
 }
 
 .case-item .case-content a:hover {
-  color: #26547c;
+  color: #0a1854;
 }
 
 .case-item .case-content p {
@@ -2179,15 +2184,15 @@ form {
 }
 
 .single-pricing.navy {
-  background-color: #26547c;
+  background-color: #0a1854;
 }
 
 .single-pricing.navy .price {
-  background-color: #26547c;
+  background-color: #0a1854;
 }
 
 .single-pricing.navy a:hover {
-  color: #26547c;
+  color: #0a1854;
 }
 
 /*----------------------------------------*/
@@ -2845,7 +2850,7 @@ form {
 /*  14.  Contact Area
 /*----------------------------------------*/
 .contact-area {
-  background-color: #26547c;
+  background-color: #0a1854;
 }
 
 #contact-map {
@@ -2875,7 +2880,7 @@ form {
 
 .contact-form.form-white form .input-box input[type="submit"]:hover {
   background-color: #fff;
-  color: #26547c;
+  color: #0a1854;
 }
 
 /*----------------------------------------*/
