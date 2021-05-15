@@ -625,7 +625,7 @@ textarea:-ms-input-placeholder {
 #scrollUp {
   width: 40px;
   height: 40px;
-  background-color: #ef476f;
+  background-color: #b42251;
   color: #fff;
   right: 40px;
   bottom: 40px;
@@ -723,7 +723,7 @@ textarea:-ms-input-placeholder {
 }
 
 .page-banner-area .page-banner .breadcrumb li a:hover {
-  color: #06ca75;
+  color: #5ebed9;
 }
 
 .page-banner-area .page-banner .breadcrumb li+li::before {
@@ -846,7 +846,7 @@ form {
 }
 
 .header-top-bar span.red {
-  background-color: #ef476f;
+  background-color: #b42251;
 }
 
 /*-- Header Area --*/
@@ -1008,7 +1008,7 @@ form {
   display: block;
   width: 28px;
   height: 28px;
-  background-color: #ef476f;
+  background-color: #b42251;
   border-radius: 50px;
   color: #fff;
   border: none;
@@ -1069,7 +1069,7 @@ form {
 }
 
 .header-search-form form .submit:hover {
-  background-color: #ef476f;
+  background-color: #b42251;
   color: #fff;
 }
 
@@ -1084,7 +1084,7 @@ form {
   width: 28px;
   height: 28px;
   border: none;
-  background-color: #ef476f;
+  background-color: #b42251;
   border-radius: 50px;
   color: #fff;
   padding: 0;
@@ -1174,8 +1174,8 @@ form {
 }
 
 .main-menu nav ul li a:hover {
-  border-top: 1px solid #ef476f;
-  color: #ef476f;
+  border-top: 1px solid #eea11d;
+  color: #eea11d;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1185,8 +1185,8 @@ form {
 }
 
 .main-menu nav ul li.active a {
-  border-top: 1px solid #ef476f;
-  color: #ef476f;
+  border-top: 1px solid #eea11d;
+  color: #eea11d;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1199,7 +1199,12 @@ form {
 /*  3.  Hero Area
 /*----------------------------------------*/
 .hero-item {
-  padding: 158px 0 69px;
+  padding: 70px 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  /* background: url('assets/img/slider_bg.jpg') no-repeat;
+  background-size: cover; */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1249,7 +1254,7 @@ form {
   font-size: 36px;
   font-family: Montserrat;
   font-weight: bold;
-  color: #06ca75;
+  color: #5ebed9;
   text-transform: uppercase;
   margin-bottom: 0;
   -webkit-animation-delay: 0.4s;
@@ -1281,7 +1286,7 @@ form {
   font-size: 50px;
   font-family: Montserrat;
   font-weight: bold;
-  color: #fff;
+  color: #5ebed9;
   text-transform: uppercase;
   margin-bottom: 20px;
   -webkit-animation-delay: 0.8s;
@@ -1313,7 +1318,7 @@ form {
 }
 
 .hero-item .content p {
-  color: #fff;
+  /* color: #fff; */
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
@@ -1335,7 +1340,7 @@ form {
   line-height: 24px;
   display: inline-block;
   font-family: Montserrat;
-  background-color: #06ca75;
+  background-color: #5ebed9;
   color: #fff;
   border-radius: 5px;
   text-transform: uppercase;
@@ -1547,19 +1552,19 @@ form {
 }
 
 .single-feature.green {
-  background-color: #06ca75;
+  background-color: #5ebed9;
 }
 
 .single-feature.green img {
-  background-color: #06ca75;
+  background-color: #5ebed9;
 }
 
 .single-feature.red {
-  background-color: #ef476f;
+  background-color: #b42251;
 }
 
 .single-feature.red img {
-  background-color: #ef476f;
+  background-color: #b42251;
 }
 
 .single-feature.navy {
@@ -1574,7 +1579,7 @@ form {
 /*  5.  Video Area
 /*----------------------------------------*/
 .video-area {
-  background-color: #06ca75;
+  background-color: #5ebed9;
 }
 
 .video-wrapper {
@@ -1863,7 +1868,7 @@ form {
   font-size: 30px;
   font-family: Montserrat;
   font-weight: 600;
-  color: #06ca75;
+  color: #5ebed9;
   margin-bottom: 0;
   text-transform: capitalize;
 }
@@ -1909,7 +1914,7 @@ form {
   line-height: 24px;
   display: inline-block;
   font-family: Montserrat;
-  background-color: #06ca75;
+  background-color: #5ebed9;
   color: #fff;
   border-radius: 5px;
   text-transform: uppercase;
@@ -2007,7 +2012,7 @@ form {
 /*  9.  Case Area
 /*----------------------------------------*/
 .case-study-area {
-  background-color: #ef476f;
+  background-color: #b42251;
 }
 
 .case-item {
@@ -2150,27 +2155,27 @@ form {
 }
 
 .single-pricing.red {
-  background-color: #ef476f;
+  background-color: #b42251;
 }
 
 .single-pricing.red .price {
-  background-color: #ef476f;
+  background-color: #b42251;
 }
 
 .single-pricing.red a:hover {
-  color: #ef476f;
+  color: #b42251;
 }
 
 .single-pricing.green {
-  background-color: #06ca75;
+  background-color: #5ebed9;
 }
 
 .single-pricing.green .price {
-  background-color: #06ca75;
+  background-color: #5ebed9;
 }
 
 .single-pricing.green a:hover {
-  color: #06ca75;
+  color: #5ebed9;
 }
 
 .single-pricing.navy {
@@ -2189,7 +2194,7 @@ form {
 /*  11.  Testimonial Area
 /*----------------------------------------*/
 .testimonial-area {
-  background-color: #06ca75;
+  background-color: #5ebed9;
 }
 
 .single-testimonial {
@@ -2237,7 +2242,7 @@ form {
 
 .single-team .team-info {
   padding: 15px;
-  background-color: #ef476f;
+  background-color: #b42251;
 }
 
 .single-team .team-info h4 {
@@ -2272,7 +2277,7 @@ form {
 }
 
 .single-team .team-info .social a:hover {
-  color: #ef476f;
+  color: #b42251;
   background-color: #fff;
 }
 
@@ -2350,7 +2355,7 @@ form {
 }
 
 .blog-item .title a:hover {
-  color: #06ca75;
+  color: #5ebed9;
 }
 
 .blog-item p {
@@ -2364,8 +2369,8 @@ form {
   line-height: 24px;
   display: inline-block;
   font-family: Montserrat;
-  color: #06ca75;
-  border: 2px solid #06ca75;
+  color: #5ebed9;
+  border: 2px solid #5ebed9;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: 600;
@@ -2379,7 +2384,7 @@ form {
 }
 
 .blog-item .read-more:hover {
-  background-color: #06ca75;
+  background-color: #5ebed9;
   color: #fff;
 }
 
@@ -2418,7 +2423,7 @@ form {
 }
 
 .blog-details-content .blog-meta a:hover {
-  color: #06ca75;
+  color: #5ebed9;
 }
 
 .blog-details-content .blog-meta a i {
@@ -2471,7 +2476,7 @@ form {
 }
 
 .blog-details-footer .blog-tags a:hover {
-  color: #06ca75;
+  color: #5ebed9;
 }
 
 @media only screen and (max-width: 479px) {
@@ -2508,8 +2513,8 @@ form {
 }
 
 .blog-details-footer .blog-share a:hover {
-  background-color: #06ca75;
-  border-color: #06ca75;
+  background-color: #5ebed9;
+  border-color: #5ebed9;
   color: #fff;
 }
 
@@ -2605,11 +2610,11 @@ form {
 }
 
 .sin-comment .content h5 a {
-  color: #06ca75;
+  color: #5ebed9;
 }
 
 .sin-comment .content h5 a:hover {
-  color: #06ca75;
+  color: #5ebed9;
 }
 
 .sin-comment .content p {
@@ -2707,8 +2712,8 @@ form {
 }
 
 .comment-form form .input-box input[type="submit"]:hover {
-  background-color: #06ca75;
-  border-color: #06ca75;
+  background-color: #5ebed9;
+  border-color: #5ebed9;
   color: #fff;
 }
 
@@ -2781,7 +2786,7 @@ form {
 }
 
 .categories li a:hover {
-  color: #06ca75;
+  color: #5ebed9;
 }
 
 /* Sidebar Post */
@@ -2812,7 +2817,7 @@ form {
 }
 
 .sidebar-post .content a:hover {
-  color: #06ca75;
+  color: #5ebed9;
 }
 
 /* Tag Cloud */
@@ -2832,8 +2837,8 @@ form {
 }
 
 .tag-cloud a:hover {
-  color: #06ca75;
-  border-color: #06ca75;
+  color: #5ebed9;
+  border-color: #5ebed9;
 }
 
 /*----------------------------------------*/
@@ -2899,7 +2904,7 @@ form {
 }
 
 .footer-widget .title span {
-  color: #06ca75;
+  color: #5ebed9;
 }
 
 .about-widget img {
@@ -2941,7 +2946,7 @@ form {
 }
 
 .link-widget ul li a:hover {
-  color: #06ca75;
+  color: #5ebed9;
 }
 
 .newsletter-widget p {
@@ -2977,7 +2982,7 @@ form {
   width: 40px;
   height: 31px;
   text-align: center;
-  background-color: #06ca75;
+  background-color: #5ebed9;
   color: #fff;
   border: none;
   margin-left: -1px;
@@ -3009,7 +3014,7 @@ form {
 }
 
 .newsletter-widget .social a:hover {
-  background-color: #06ca75;
+  background-color: #5ebed9;
 }
 
 .newsletter-widget .social a i {
@@ -3038,7 +3043,7 @@ form {
 }
 
 .copyright p span {
-  color: #ef476f;
+  color: #b42251;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3054,11 +3059,11 @@ form {
 }
 
 .author-credit p a:hover {
-  color: #ef476f;
+  color: #b42251;
 }
 
 .author-credit p i {
-  color: #ef476f;
+  color: #b42251;
 }
 
 /*# sourceMappingURL=style.css.map */
