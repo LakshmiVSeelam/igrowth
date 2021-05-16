@@ -36,6 +36,7 @@ export class AppComponent {
 
       if(val instanceof NavigationEnd){
         this.titleService.setTitle(this.pagetitles[val.url]);
+        window.scrollTo(0, 0)
       }
     });
 
