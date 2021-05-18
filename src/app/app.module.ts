@@ -21,6 +21,8 @@ import { TestimonialsectionComponent } from './testimonialsection/testimonialsec
 import { BlogsectionComponent } from './blogsection/blogsection.component';
 import { PagebannerComponent } from './pagebanner/pagebanner.component';
 import { TeamsectionComponent } from './teamsection/teamsection.component';
+import { BlogComponent } from './blog/blog.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { TeamsectionComponent } from './teamsection/teamsection.component';
     TestimonialsectionComponent,
     BlogsectionComponent,
     PagebannerComponent,
-    TeamsectionComponent
+    TeamsectionComponent,
+    BlogComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +53,8 @@ import { TeamsectionComponent } from './teamsection/teamsection.component';
       {path: '', component: HomeComponent},
       {path: 'home', component: HomeComponent},
       {path: 'about', component: AboutComponent},
+      {path: 'blog', component: BlogsectionComponent},
+      {path: 'portfolio', component: PortfolioComponent},
       {path: 'services', component: ServicesComponent},
       {path: 'contact', component: ContactComponent}
     ])
