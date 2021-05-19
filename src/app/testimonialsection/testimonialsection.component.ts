@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-declare const sliders: any;
+declare const slickSlider: any;
 
 @Component({
   selector: 'app-testimonialsection',
@@ -13,7 +13,7 @@ export class TestimonialsectionComponent implements OnInit {
 
   ngOnInit(): void {
     // Testimonial Slider
-    sliders()
+    slickSlider('.testimonial-slider')
   }
 
 }

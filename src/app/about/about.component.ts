@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-declare const sliders: any;
+// declare const sliders: any;
 declare const scrollUp: any;
 @Component({
   selector: 'app-about',
@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    sliders()
+    // sliders()
     scrollUp()
   }
 

@@ -14,7 +14,11 @@ export class PagebannerComponent implements OnInit {
     '/' : 'Home',
     '/about' : 'About',
     '/services' : 'Services',
-    '/contact' : 'Contact'
+    '/contact' : 'Contact',
+    '/blog' : 'Blog',
+    '/portfolio' : 'Portfolio'
+
+    
   }
   constructor(router: Router,private titleService:Title) { 
 

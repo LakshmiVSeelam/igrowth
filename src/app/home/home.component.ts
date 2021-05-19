@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var slickSlider : any
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -12,6 +13,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    slickSlider('.hero-slider')
   }
 
 }

@@ -6,7 +6,7 @@ import { Title } from '@angular/platform-browser';
 import $ from '../assets/js/vendor/jquery.js'
 import {NavigationEnd, Router} from '@angular/router';
 
-declare const sliders: any;
+
 declare const scrollUp: any;
 declare const magnificPopups: any;
 
@@ -26,7 +26,9 @@ export class AppComponent {
     '/' : 'Home | Igrowth',
     '/about' : 'About | Igrowth',
     '/services' : 'Services | Igrowth',
-    '/contact' : 'Contact | Igrowth'
+    '/contact' : 'Contact | Igrowth',
+    '/portfolio' : 'Portfolio | Igrowth',
+    '/blog' : 'Blog | Igrowth'
   }
 
   constructor(router: Router, private titleService:Title) {
@@ -78,7 +80,7 @@ export class AppComponent {
       }
     });
 
-    sliders()
+    // sliders()
     magnificPopups()
 
   }

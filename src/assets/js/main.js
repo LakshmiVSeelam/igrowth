@@ -1,30 +1,35 @@
-function sliders() {
-  $('.hero-slider').slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    infinite: true,
-    slidesToShow: 1,
-  });
+function slickSlider(el) {
+  if (el == '.hero-slider') {
+    $(el).not('.slick-initialized').slick({
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      infinite: true,
+      slidesToShow: 1,
+    });
+  } else {
+    $(el).not('.slick-initialized').slick({
+      arrows: false,
+      infinite: true,
+      slidesToShow: 3,
+      responsive: [{
+          breakpoint: 950,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  }
 
-  $('.feature-slider, .case-slider, .testimonial-slider').slick({
-    arrows: false,
-    infinite: true,
-    slidesToShow: 3,
-    responsive: [{
-        breakpoint: 950,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 750,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
+
+
 }
 
 function scrollUp() {
