@@ -17,7 +17,7 @@
   <div class="row mb-20">
     <div class="col-md-3 col-xs-12 mb-10" *ngFor="let img of img_arr"
       [hidden]="active_cat != 'all' && active_cat == img.split('_')[0]">
-      <img src="../../assets/img/portfolio/{{img}}.jpg" alt="" [data-attr]="img.split('_')[0]" class="img-responsive">
+      <img src="../assets/img/portfolio/{{img}}.jpg" alt="" [data-attr]="img.split('_')[0]" class="img-responsive">
     </div>
   </div>
 
