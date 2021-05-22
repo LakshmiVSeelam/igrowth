@@ -1708,7 +1708,7 @@ form {
 .service-wrapper {
   float: left;
   width: 100%;
-  background: transparent url("assets/img/service/line.png") no-repeat scroll center center;
+  /* background: transparent url("assets/img/service/line.png") no-repeat scroll center center; */
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
