@@ -12,11 +12,9 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { FeaturesectionComponent } from './featuresection/featuresection.component';
 import { VideosectionComponent } from './videosection/videosection.component';
-import { ServicesectionComponent } from './servicesection/servicesection.component';
 import { SolutionsectionComponent } from './solutionsection/solutionsection.component';
 import { ProgresssectionComponent } from './progresssection/progresssection.component';
 import { CasestudysectionComponent } from './casestudysection/casestudysection.component';
-import { PricingsectionComponent } from './pricingsection/pricingsection.component';
 import { TestimonialsectionComponent } from './testimonialsection/testimonialsection.component';
 import { BlogsectionComponent } from './blogsection/blogsection.component';
 import { PagebannerComponent } from './pagebanner/pagebanner.component';
@@ -35,11 +33,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     FooterComponent,
     FeaturesectionComponent,
     VideosectionComponent,
-    ServicesectionComponent,
     SolutionsectionComponent,
     ProgresssectionComponent,
     CasestudysectionComponent,
-    PricingsectionComponent,
     TestimonialsectionComponent,
     BlogsectionComponent,
     PagebannerComponent,
@@ -53,7 +49,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
       {path: '', component: HomeComponent},
       {path: 'home', component: HomeComponent},
       {path: 'about', component: AboutComponent},
-      {path: 'blog', component: BlogsectionComponent},
+      {path: 'blog', component: BlogComponent},
       {path: 'portfolio', component: PortfolioComponent},
       {path: 'services', component: ServicesComponent},
       {path: 'contact', component: ContactComponent}

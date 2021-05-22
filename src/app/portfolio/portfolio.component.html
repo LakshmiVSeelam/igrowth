@@ -1,2 +1,24 @@
 <app-pagebanner></app-pagebanner>
-<app-casestudysection></app-casestudysection>
+<div class="row">
+  <div class="section-title text-center col-xs-12 mt-20">
+    <h1>Our Portfolio</h1>
+  </div>
+</div>
+<div class="container mb-20 mt-20 portfolio-section">
+  <div class="row mb-20">
+    <div class="col-xs-12 text-center">
+      <div class="btn-group">
+        <button class="btn section-btn" [ngClass]="active_cat == cat.id ? 'active': ''" *ngFor="let cat of categories"
+          (click)="active_cat = cat.id">{{cat.name}}</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-20">
+    <div class="col-md-3 col-xs-12 mb-10" *ngFor="let img of img_arr"
+      [hidden]="active_cat != 'all' && active_cat == img.split('_')[0]">
+      <img src="../../assets/img/portfolio/{{img}}.jpg" alt="" [data-attr]="img.split('_')[0]" class="img-responsive">
+    </div>
+  </div>
+
+</div>
