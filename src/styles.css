@@ -1,6 +1,6 @@
 @import url("assets/css/montserrat.css");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
-@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* @import url("../node_modules/bootstrap/dist/css/bootstrap.min.css"); */
 
 /* light blue : #5ebed9 */
 /* dark blue : #001854 */
@@ -26,6 +26,10 @@ h6 {
   color: #525252;
   font-weight: bold;
   margin-top: 0;
+}
+
+.font-weight-bold {
+  font-weight: bold;
 }
 
 p:last-child {
