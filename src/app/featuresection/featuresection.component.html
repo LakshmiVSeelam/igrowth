@@ -1,20 +1,63 @@
 <!-- Feature Area Start -->
-<div id="feature-area" class="feature-area section pb-110 pt-110">
+<div id="feature-area" class="feature-area section pt-20">
   <div class="container">
+    <div class="">
+      <div class="col-12">
+        <p class="mt-20">Is your business unable to meet your expectations because of improper digital marketing
+          strategies?
+          IGROWTH is here
+          to provide the right strategy. Here are our services that provide you with the best digital marketing services
+          for
+          your business:</p>
+        <p>
+          Currently, our services are provided to F&B, Events and Real Estate vertical promotions. Our objectives are
+          driven by the organization's priorities. If you are trying to get better rankings on search engines, leads,
+          converting your sales and brand recognition our team makes you achieve in all of these. Email marketing is our
+          key to get profits and more audience for your business.
+
+          IGROWTH is a team joined by a passion to build your brands. We take our clients' business to create new
+          heights. Long-term ideality is offered with total quality management. Grow and evolve your business with
+          IGROWTH.
+
+        </p>
+      </div>
+    </div>
     <div class="row">
 
       <!-- Feature Slider -->
-      <div class="feature-slider">
-        <!-- Single Feature -->
+      <!-- <div class="feature-slider">
         <div class="col-xs-12 col-md-4 mt-10 mb-10" *ngFor="let item of features">
-          <div class="single-feature {{item.bg_class}}">
+          <div class="single-feature bg-light">
             <img class="icon" src="{{ item.img }}" alt="">
             <img class="bg-image" src="{{ item.bg_img }}" alt="">
-            <h4>{{ item.name }}</h4>
-            <p>Small description goes here...</p>
+            <h4 class="text-dark">{{ item.name }}</h4>
+            <p class="text-dark">{{item.desc.substring(0, 150)}}...</p>
           </div>
         </div>
 
+      </div> -->
+
+      <div class="d-flex align-items-start">
+        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+            type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+            type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+            type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+            type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            ...</div>
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...
+          </div>
+          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...
+          </div>
+          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...
+          </div>
+        </div>
       </div>
 
 

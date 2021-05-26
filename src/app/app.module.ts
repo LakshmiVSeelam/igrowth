@@ -8,6 +8,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
+import { ServicesectionComponent } from './servicesection/servicesection.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { FeaturesectionComponent } from './featuresection/featuresection.component';
@@ -21,6 +22,7 @@ import { PagebannerComponent } from './pagebanner/pagebanner.component';
 import { TeamsectionComponent } from './teamsection/teamsection.component';
 import { BlogComponent } from './blog/blog.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { AboutcontentComponent } from './aboutcontent/aboutcontent.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     HomeComponent,
     AboutComponent,
     ServicesComponent,
+    ServicesectionComponent,
     ContactComponent,
     FooterComponent,
     FeaturesectionComponent,
@@ -41,7 +44,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     PagebannerComponent,
     TeamsectionComponent,
     BlogComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    AboutcontentComponent
   ],
   imports: [
     BrowserModule,
