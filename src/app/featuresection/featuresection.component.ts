@@ -20,10 +20,19 @@ export class FeaturesectionComponent implements OnInit {
     {"id": 7, "name": "Strategy and Growth", "desc": "...", "img": "assets/img/feature/stratergy_bg.png", "bg_img": "assets/img/feature/stratergy.png", "bg_class": "navy"},
     {"id": 8, "name": "Event Marketing", "desc": "Make successful partnerships with our professional event marketing services. We add life to your events digitally. We help you to target your audience with a variety of digital marketing services. We have been able to build a secure and peculiar network. With our experienced marketing services, you can have enormous families viewing your virtual events. Connecting to each consumer by engaging you with an individual experience is our vision. With a team of consultancy experts, we are being the best in the use of technology in organizing events. Obtain Streamline workflows with customizable approval routing marketing hassle-free events with us.", "img": "assets/img/feature/event_bg.png", "bg_img": "assets/img/feature/event.png", "bg_class": "green"}
   ]
-  active_tab = 1
+  
+  
+  
+  // tab_action(i){
+  //   this.active_tab = i
+  // }
 
-  tab_action(i){
-    this.active_tab = i
+  show_full_content(ele){
+    ele['show_more'] = true
+  }
+
+  hide_full_content(ele){
+    ele['show_more'] = false
   }
 
   constructor( private titleService:Title) { 
@@ -33,6 +42,9 @@ export class FeaturesectionComponent implements OnInit {
   ngOnInit(): void {
     this.pagetitle = this.titleService.getTitle()
     this.features = this.pagetitle == 'Home | Igrowth' ? this.features.slice(1,4) : this.features
+    this.features.forEach(ele => {
+      ele['show_more'] = false
+    });
   }
 
 }

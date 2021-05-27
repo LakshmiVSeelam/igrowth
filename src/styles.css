@@ -1496,10 +1496,10 @@ form {
 /*----------------------------------------*/
 .single-feature {
   text-align: center;
-  padding: 66px 20px 43px;
+  padding: 50px 20px 20px 20px;
   position: relative;
   margin-top: 41px;
-  border: solid 1px #eea11d
+  /* border: solid 1px #eea11d */
 }
 
 .single-feature .icon {
@@ -1523,7 +1523,7 @@ form {
 }
 
 .single-feature h4 {
-  /* color: #fff; */
+  color: #fff;
   position: relative;
   font-size: 20px;
   font-weight: 500;
@@ -1557,7 +1557,7 @@ form {
 }
 
 .single-feature p {
-  /* color: #fff; */
+  color: #fff;
   font-size: 13px;
   line-height: 23px;
 }

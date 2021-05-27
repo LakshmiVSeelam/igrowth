@@ -15,19 +15,47 @@
     <div class="row mt-20 mb-20">
 
       <!-- Feature Slider -->
-      <!-- <div class="feature-slider">
-        <div class="col-xs-12 col-md-4 mt-10 mb-10" *ngFor="let item of features">
-          <div class="single-feature bg-light">
+      <div class="feature-slider">
+        <div class="col-xs-12 col-md-12 mt-10 mb-10" *ngFor="let item of features">
+          <div class="single-feature {{item.bg_class}}">
             <img class="icon" src="{{ item.img }}" alt="">
             <img class="bg-image" src="{{ item.bg_img }}" alt="">
-            <h4 class="text-dark">{{ item.name }}</h4>
-            <p class="text-dark">{{item.desc.substring(0, 150)}}...</p>
+            <h4 class="">{{ item.name }}</h4>
+            <p class="service_desc">{{item.show_more == false ? item.desc.substring(0,200) + '...' : item.desc}}</p>
+            <div class="mt-10" *ngIf="(item.id == 1) && (item.show_more == true)">
+              <h4>Merits of our SEO services</h4>
+              <ul class="">
+                <li>
+                  <p class="font-weight-bold">Providing high-quality backlinks</p>
+                  <p>We make your website a domain authority by administering tones of backlinks and relevant
+                    sites.</p>
+                </li>
+                <li>
+                  <p class="font-weight-bold">Increases your brand visibility</p>
+                  <p>We make your website search engine optimized in search engines like yahoo, Google and bing
+                    which leads to more visibility of your brand.</p>
+                </li>
+                <li>
+                  <p class="font-weight-bold">Better conversion rate</p>
+                  <p>Traffic that you get from us with our SEO services is more probable to have a greater
+                    conversion rate.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="show_more_icon" *ngIf="(!item.show_more) && (item.desc.length > 200)"
+              (click)="show_full_content(item)">
+              <i class="zmdi zmdi-chevron-down"></i>
+            </div>
+            <div class="show_more_icon" *ngIf="item.show_more" (click)="hide_full_content(item)">
+              <i class="zmdi zmdi-chevron-up"></i>
+            </div>
+
           </div>
         </div>
 
-      </div> -->
+      </div>
 
-      <div class="container feature-list">
+      <!-- <div class="container feature-list">
         <div class="row">
           <div class="col-md-4 left-section">
             <ul class="">
@@ -72,7 +100,7 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
 
 
     </div>
