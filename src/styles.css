@@ -1208,10 +1208,11 @@ form {
 /*  3.  Hero Area
 /*----------------------------------------*/
 .hero-item {
-  padding: 70px 0;
+  padding: 0 0;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  background: #f7f7f7
   /* background: url('assets/img/slider_bg.jpg') no-repeat;
   background-size: cover; */
 }
@@ -1809,8 +1810,8 @@ form {
 }
 
 .service-item .ss-wrap .content p {
-  line-height: 25px;
-  font-size: 14px;
+  line-height: 18px;
+  font-size: 13px;
   color: #858585;
 }
 

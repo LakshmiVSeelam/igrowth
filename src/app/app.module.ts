@@ -23,6 +23,7 @@ import { TeamsectionComponent } from './teamsection/teamsection.component';
 import { BlogComponent } from './blog/blog.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutcontentComponent } from './aboutcontent/aboutcontent.component';
+import { BlogdetailComponent } from './blogdetail/blogdetail.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { AboutcontentComponent } from './aboutcontent/aboutcontent.component';
     TeamsectionComponent,
     BlogComponent,
     PortfolioComponent,
-    AboutcontentComponent
+    AboutcontentComponent,
+    BlogdetailComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +58,8 @@ import { AboutcontentComponent } from './aboutcontent/aboutcontent.component';
       {path: 'blog', component: BlogComponent},
       {path: 'portfolio', component: PortfolioComponent},
       {path: 'services', component: ServicesComponent},
-      {path: 'contact', component: ContactComponent}
+      {path: 'contact', component: ContactComponent},
+      {path: 'blogdetail', component: BlogdetailComponent}
     ])
   ],
   providers: [],
