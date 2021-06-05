@@ -20,15 +20,15 @@ declare const magnificPopups: any;
 })
 export class AppComponent {
 
-  title = 'igrowth';
+  title = 'Promotel';
 
   pagetitles = {
-    '/' : 'Home | Igrowth',
-    '/about' : 'About | Igrowth',
-    '/services' : 'Services | Igrowth',
-    '/contact' : 'Contact | Igrowth',
-    '/portfolio' : 'Portfolio | Igrowth',
-    '/blog' : 'Blog | Igrowth'
+    '/' : 'Home | Promotel',
+    '/about' : 'About | Promotel',
+    '/services' : 'Services | Promotel',
+    '/contact' : 'Contact | Promotel',
+    '/portfolio' : 'Portfolio | Promotel',
+    '/blog' : 'Blog | Promotel'
   }
 
   constructor(router: Router, private titleService:Title) {

@@ -2450,9 +2450,31 @@ form {
 .blog-details-content p {
   color: #858585;
   font-weight: 300;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
-
+.blog-details-content h5{
+  font-size: 16px;
+  font-weight: 600;
+}
+.blog-details-content h6{
+  font-size: 14px;
+  font-weight: 600;
+}
+.blog-details-content ul{
+  margin: 10px 0px
+}
+.blog-details-content table{
+  border:solid 1px #ccc;
+  margin-bottom: 10px;
+}
+.blog-details-content thead{
+  border-bottom:solid 1px #ccc;
+  background: #eee;
+}
+.blog-details-content th, td{
+  padding:5px 10px;
+  border-right: solid 1px #ccc;
+}
 .blog-details-content p:last-child {
   margin-bottom: 0;
 }

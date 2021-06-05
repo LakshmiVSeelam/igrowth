@@ -41,7 +41,7 @@ export class FeaturesectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.pagetitle = this.titleService.getTitle()
-    this.features = this.pagetitle == 'Home | Igrowth' ? this.features.slice(1,4) : this.features
+    this.features = this.pagetitle == 'Home | Promotel' ? this.features.slice(1,4) : this.features
     this.features.forEach(ele => {
       ele['show_more'] = false
     });
