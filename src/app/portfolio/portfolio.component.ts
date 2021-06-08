@@ -8,20 +8,33 @@ import $ from '../../assets/js/vendor/jquery.js'
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-
   active_cat = 'all'
   categories = [
     {'id': 'all', 'name': 'Our Creations'},
-    {'id': 'c2', 'name': 'Website Designs'},
-    {'id': 'c3', 'name': 'Graphic Designs'}
+    {'id': 'website', 'name': 'Website Designs'},
+    {'id': 'graphic', 'name': 'Graphic Designs'}
   ]
-  img_arr = ['c2_1', 'c2_2', 'c2_3', 'c3_1', 'c3_2']
+
+  web_count = 0
+  graphic_count = 5
+
+  img_arr = []
 
   constructor() { 
     
   }
 
   ngOnInit(): void {
+    [...Array(this.web_count).keys()].forEach(i => {
+      if(i > 0){
+        this.img_arr.push('website_' + i)
+      }
+    });
+    [...Array(this.graphic_count).keys()].forEach(i => {
+      if(i>0){
+        this.img_arr.push('graphic_' + i)
+      }
+    });
   }
 
 }
