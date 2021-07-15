@@ -12,9 +12,9 @@ declare const slickSlider: any;
 export class CasestudysectionComponent{
 
   portfoliosections = [
-    {"id": 1, "name": "Our creation"},
-    {"id": 2, "name": "Website Designs"},
-    {"id": 3, "name": "Graphic Designs"}
+    {"id": 1, "name": "Our creation", "video_link": "https://ve3d.nyc3.digitaloceanspaces.com/usercontent/139668/videos/ved_200777VVbZNKN.mp4"},
+    {"id": 2, "name": "Website Designs", "video_link": "https://ve3d.nyc3.digitaloceanspaces.com/usercontent/139668/videos/ved_2008962iaDukw.mp4"},
+    {"id": 3, "name": "Graphic Designs", "video_link": "https://ve3d.nyc3.digitaloceanspaces.com/usercontent/139668/videos/ved_201159iGCxt0O.mp4"}
   ]
   constructor() { }
 

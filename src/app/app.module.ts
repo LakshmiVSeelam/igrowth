@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 
 import { AppComponent } from './app.component';
@@ -52,17 +55,20 @@ import { BlogdetailComponent } from './blogdetail/blogdetail.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      {path: '', component: HomeComponent},
+      {path: '', pathMatch: 'full', redirectTo: 'home'},
       {path: 'home', component: HomeComponent},
       {path: 'about', component: AboutComponent},
       {path: 'blog', component: BlogComponent},
       {path: 'portfolio', component: PortfolioComponent},
       {path: 'services', component: ServicesComponent},
       {path: 'contact', component: ContactComponent},
-      {path: 'blogdetail', component: BlogdetailComponent}
-    ])
+      {path: 'blogdetail', component: BlogdetailComponent},
+      {path: '404', component: HomeComponent},
+      {path: '**', component: HomeComponent}
+    ]),
+    FormsModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

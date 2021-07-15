@@ -1,5 +1,6 @@
-@import url("assets/css/montserrat.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css");
 /* @import url("../node_modules/bootstrap/dist/css/bootstrap.min.css"); */
 
 /* light blue : #5ebed9 */
@@ -634,7 +635,7 @@ textarea:-ms-input-placeholder {
 #scrollUp {
   width: 40px;
   height: 40px;
-  background-color: #b42251;
+  background-color: #0a1854;
   color: #fff;
   right: 40px;
   bottom: 40px;
@@ -702,7 +703,7 @@ textarea:-ms-input-placeholder {
 }
 
 .section-title.title-white h1 {
-  color: #fff;
+  /* color: #fff; */
 }
 
 .section-title.title-white h1::before {
@@ -917,7 +918,7 @@ form {
 }
 
 .header-area.stick .main-menu {
-  margin: 26px 0;
+  margin: 30px 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1118,7 +1119,7 @@ form {
 
 /*-- Menu --*/
 .main-menu {
-  margin: 36px 0;
+  margin: 30px 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1173,7 +1174,7 @@ form {
   color: #fff;
   line-height: 22px;
   font-weight: 500;
-  margin: 3px 0 2px;
+  margin: 4px 0 2px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1213,7 +1214,7 @@ form {
   background-repeat: no-repeat;
   background-position: right;
   background: #f7f7f7
-  /* background: url('assets/img/slider_bg.jpg') no-repeat;
+    /* background: url('assets/img/slider_bg.jpg') no-repeat;
   background-size: cover; */
 }
 
@@ -1591,7 +1592,7 @@ form {
 /*  5.  Video Area
 /*----------------------------------------*/
 .video-area {
-  background-color: #5ebed9;
+  background-color: #e6e6e6;
 }
 
 .video-wrapper {
@@ -1617,7 +1618,7 @@ form {
 }
 
 .video-content {
-  margin-top: 14px;
+  margin-top: 0px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1639,12 +1640,12 @@ form {
 }
 
 .video-content h1 {
-  font-size: 50px;
+  font-size: 36px;
   font-family: Montserrat;
   font-weight: bold;
-  color: #fff;
+  color: #525252;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1672,11 +1673,12 @@ form {
 
 .video-content p {
   font-family: Montserrat;
-  color: #fff;
-  font-size: 16px;
+  color: #525252;
+  font-size: 14px;
   line-height: 26px;
   font-weight: 300;
-  margin-bottom: 32px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1799,7 +1801,7 @@ form {
 }
 
 .service-item .ss-wrap .content h3 {
-  font-size: 24px;
+  font-size: 22px;
   text-transform: capitalize;
 }
 
@@ -2024,7 +2026,7 @@ form {
 /*  9.  Case Area
 /*----------------------------------------*/
 .case-study-area {
-  background-color: #b42251;
+  background-color: #e6e6e6;
 }
 
 .case-item {
@@ -2065,8 +2067,8 @@ form {
 }
 
 .case-item .case-content {
-  padding: 22px 27px;
-  background-color: #fff;
+  /* padding: 22px 27px; */
+  /* background-color: #fff; */
 }
 
 .case-item .case-content a {
@@ -2452,29 +2454,37 @@ form {
   font-weight: 300;
   margin-bottom: 15px;
 }
-.blog-details-content h5{
+
+.blog-details-content h5 {
   font-size: 16px;
   font-weight: 600;
 }
-.blog-details-content h6{
+
+.blog-details-content h6 {
   font-size: 14px;
   font-weight: 600;
 }
-.blog-details-content ul{
+
+.blog-details-content ul {
   margin: 10px 0px
 }
-.blog-details-content table{
-  border:solid 1px #ccc;
+
+.blog-details-content table {
+  border: solid 1px #ccc;
   margin-bottom: 10px;
 }
-.blog-details-content thead{
-  border-bottom:solid 1px #ccc;
+
+.blog-details-content thead {
+  border-bottom: solid 1px #ccc;
   background: #eee;
 }
-.blog-details-content th, td{
-  padding:5px 10px;
+
+.blog-details-content th,
+td {
+  padding: 5px 10px;
   border-right: solid 1px #ccc;
 }
+
 .blog-details-content p:last-child {
   margin-bottom: 0;
 }
@@ -2882,7 +2892,7 @@ form {
   background-color: #0a1854;
 }
 
-#contact-map {
+#contact-map iframe{
   height: 330px;
   width: 100%;
 }
@@ -2934,7 +2944,7 @@ form {
   font-weight: bold;
   line-height: 14px;
   margin-top: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .footer-widget .title span {
@@ -2942,7 +2952,7 @@ form {
 }
 
 .about-widget img {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .about-widget p {
@@ -2957,6 +2967,7 @@ form {
   letter-spacing: 0.2px;
   color: #fff;
   display: block;
+  width: 75%
 }
 
 .contact-info-widget ul li {
@@ -2968,7 +2979,7 @@ form {
 }
 
 .link-widget ul li {
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
 }
 
 .link-widget ul li a {

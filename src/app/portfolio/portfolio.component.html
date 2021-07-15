@@ -15,10 +15,19 @@
   </div>
 
   <div class="row mb-20">
-    <div class="col-md-3 col-xs-12 mb-10" *ngFor="let img of img_arr"
-      [hidden]="active_cat != 'all' && active_cat != img.split('_')[0]">
-      <img src="assets/img/portfolio/{{img}}.jpg" alt="" [data-attr]="img.split('_')[0]" class="img-responsive">
+    <div class="" *ngIf="(active_cat == 'videos') || (active_cat == 'all')">
+      <div class="col-md-4 col-xs-12 mb-10" *ngFor="let video of videos">
+        <video src="{{video.video_link}}" style="width: 100%; height: 100%;" controls></video>
+        <!-- <img src="assets/img/portfolio/{{img}}.jpg" alt="" [data-attr]="img.split('_')[0]" class="img-responsive"> -->
+      </div>
     </div>
+    <div class="" *ngIf="(active_cat != 'videos')">
+      <div class="col-md-3 col-xs-12 mb-10" *ngFor="let img of final_img_arr"
+        [hidden]="active_cat != 'all' && active_cat != img.split('_')[0]">
+        <img src="assets/img/portfolio/{{img}}.jpg" alt="" [data-attr]="img.split('_')[0]" class="img-responsive">
+      </div>
+    </div>
+
   </div>
 
 </div>
