@@ -23,8 +23,8 @@
     </div>
     <div class="" *ngIf="(active_cat != 'videos')">
       <div class="col-md-3 col-xs-12 mb-10" *ngFor="let img of final_img_arr"
-        [hidden]="active_cat != 'all' && active_cat != img.split('_')[0]">
-        <img src="assets/img/portfolio/{{img}}.jpg" alt="" [data-attr]="img.split('_')[0]" class="img-responsive">
+        [hidden]="active_cat != 'all' && active_cat != img.name.split('_')[0]">
+        <img src="assets/img/portfolio/{{img.name}}.jpg" alt="" class="img-responsive">
       </div>
     </div>
 

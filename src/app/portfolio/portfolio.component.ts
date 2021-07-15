@@ -16,19 +16,12 @@ export class PortfolioComponent implements OnInit {
     {'id': 'videos', 'name': '3D Animation'}
   ]
 
-  videos = [
-    {"id": 1, "video_link": "https://ve3d.nyc3.digitaloceanspaces.com/usercontent/139668/videos/ved_200777VVbZNKN.mp4"},
-    {"id": 2, "video_link": "https://ve3d.nyc3.digitaloceanspaces.com/usercontent/139668/videos/ved_2008962iaDukw.mp4"},
-    {"id": 3, "video_link": "https://ve3d.nyc3.digitaloceanspaces.com/usercontent/139668/videos/ved_201159iGCxt0O.mp4"},
-    {"id": 4, "video_link": "https://ve3d.nyc3.digitaloceanspaces.com/usercontent/139668/videos/ved_202202Bx9095M.mp4"},
-    {"id": 5, "video_link": "https://ve3d.nyc3.digitaloceanspaces.com/usercontent/139668/videos/ved_201743lVgYjvR.mp4"},
-    {"id": 6, "video_link": "https://ve3d.nyc3.digitaloceanspaces.com/usercontent/139668/videos/ved_200663rILRAgO.mp4"}
-  ]
+  videos = []
 
-  web_count = 20
-  graphic_count = 20
+  
 
-  img_arr = []
+  graphic_img_arr = []
+  website_img_arr = []
   final_img_arr = []
 
   constructor() { 
@@ -36,25 +29,19 @@ export class PortfolioComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    [...Array(this.web_count).keys()].forEach(i => {
-      if(i > 0){
-        this.img_arr.push('website_' + i)
-      }
-    });
-    [...Array(this.graphic_count).keys()].forEach(i => {
-      if(i>0){
-        this.img_arr.push('graphic_' + i)
-      }
-    });
-
     var self = this
-    this.img_arr.forEach((img_name) => {
-      $.get(`assets/img/portfolio/${img_name}.jpg`).done(function(){
-        self.final_img_arr.push(img_name)
-      })
-    })
+    let graphics_url = 'assets/data/graphic_img_data.json'
+    let videos_url = 'assets/data/video_data.json'
+    let website_url = 'assets/data/website_img_data.json'
+    
+    $.when(
+        $.getJSON(graphics_url),
+        $.getJSON(website_url),
+        $.getJSON(videos_url)
+    ).done(function(res1, res2, res3) {
+      self.final_img_arr = res1[0].concat(res2[0])
+      self.videos = res3[0]
+    });
   }
-
-  
 
 }
