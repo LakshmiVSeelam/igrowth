@@ -43,5 +43,4 @@ export class PortfolioComponent implements OnInit {
       self.videos = res3[0]
     });
   }
-
 }

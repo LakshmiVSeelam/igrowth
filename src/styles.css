@@ -1218,6 +1218,13 @@ form {
   background-size: cover; */
 }
 
+.hero-item .content{
+  position: absolute;
+  z-index: 1;
+  margin-left: 90px;
+  margin-top: 90px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-item {
     padding: 120px 0;
@@ -1230,13 +1237,10 @@ form {
   }
 }
 
-.hero-item .content {
-  margin-top: 60px;
-}
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .hero-item .content {
-    padding-right: 100px;
+    /* padding-right: 100px; */
   }
 }
 
@@ -1297,7 +1301,7 @@ form {
   font-size: 50px;
   font-family: Montserrat;
   font-weight: bold;
-  color: #5ebed9;
+  color: #fff;
   text-transform: uppercase;
   margin-bottom: 20px;
   -webkit-animation-delay: 0.8s;
@@ -1351,7 +1355,7 @@ form {
   line-height: 24px;
   display: inline-block;
   font-family: Montserrat;
-  background-color: #0a1854;
+  background-color: #eb8532;
   color: #fff;
   border-radius: 5px;
   text-transform: uppercase;
@@ -2046,7 +2050,7 @@ form {
   height: 100%;
   content: "";
   background-color: rgba(38, 84, 124, 0.9);
-  background-image: url(assets/img/case/plus.png);
+  /* background-image: url(assets/img/case/plus.png); */
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-transform: scale(2);

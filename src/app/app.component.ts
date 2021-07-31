@@ -39,13 +39,28 @@ export class AppComponent {
       if(val instanceof NavigationEnd){
         this.titleService.setTitle(this.pagetitles[val.url]);
         window.scrollTo(0, 0)
+
+        let styles = document.getElementsByTagName('style')
+        Array.from(styles).forEach(function (element) {
+          if(element.hasAttribute('data-id')){
+            element.remove()
+          }
+        });
       }
+
+      
     });
 
     
   }
 
   ngOnInit() {
+
+    if(document.URL.indexOf('://www.')===-1){
+        var base = document.getElementsByTagName('base')[0];
+        base.href = base.href.replace('://www.','://');
+    }
+    
 
     scrollUp()
     // header sticky
