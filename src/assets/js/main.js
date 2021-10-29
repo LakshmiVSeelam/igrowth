@@ -1,9 +1,10 @@
 function slickSlider(el) {
+  console.log(el)
   if (el == '.hero-slider') {
     $(el).not('.slick-initialized').slick({
       arrows: false,
       autoplay: true,
-      autoplaySpeed: 4000,
+      autoplaySpeed: 2000,
       infinite: true,
       slidesToShow: 1,
     });

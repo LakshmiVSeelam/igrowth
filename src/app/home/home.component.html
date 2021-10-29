@@ -1,23 +1,21 @@
 <!-- Hero Area Start -->
 <div id="hero-area" class="hero-area hero-slider section">
 
-  <div class="hero-slider">
-    <div class="hero-item">
-      <div class="">
-        <div class="row">
+  <div class="hero-slider" *ngIf="slider_imgs">
+    <div class="hero-item" *ngFor="let slider of slider_imgs">
+      <div class="row">
 
-          <div class="content col-lg-6 col-md-6 col-xs-12">
-            <h1>Promotel</h1>
-            <h2>we grow your business digitally</h2>
-            <a routerLink="/services" class="read-more mt-20">LEARN MORE</a>
+        <!-- <div class="content col-lg-6 col-md-6 col-xs-12">
+          <h1>Promotel</h1>
+          <h2>we grow your business digitally</h2>
+          <a routerLink="/services" class="read-more mt-20">LEARN MORE</a>
+        </div> -->
+        <div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
+          <div class="">
+            <img [src]="slider.url" alt="slider1" class="w-100">
           </div>
-          <div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
-            <div class="">
-              <img src="assets/img/slider1.png" alt="slider1" class="w-100">
-            </div>
-          </div>
-
         </div>
+
       </div>
     </div>
   </div>

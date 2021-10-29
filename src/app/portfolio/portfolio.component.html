@@ -15,17 +15,22 @@
   </div>
 
   <div class="row mb-20">
-    <div class="" *ngIf="(active_cat == 'videos') || (active_cat == 'all')">
+    <!-- videos -->
+    <div class="" *ngIf="active_cat === 'videos'">
       <div class="col-md-4 col-xs-12 mb-10" *ngFor="let video of videos">
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/{{video.id.videoId}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        <video src="https://www.youtube.com/embed/{{video.id.videoId}}" style="width: 100%; height: 100%;" controls></video>
-        <!-- <img src="assets/img/portfolio/{{img}}.jpg" alt="" [data-attr]="img.split('_')[0]" class="img-responsive"> -->
+        <iframe width="100%" height="315" [src]="video.url" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
-    <div class="" *ngIf="(active_cat != 'videos')">
-      <div class="col-md-3 col-xs-12 mb-10" *ngFor="let img of final_img_arr"
-        [hidden]="active_cat != 'all' && active_cat != img.name.split('_')[0]">
-        <img src="assets/img/portfolio/{{img.name}}.jpg" alt="" class="img-responsive">
+    <!-- graphics -->
+    <div class="" *ngIf="(active_cat === 'graphic')">
+      <div class="col-md-3 col-xs-12 mb-10" *ngFor="let graphic of graphics">
+        <img [src]="graphic.url" alt="graphics" width="100%" height="315" class="img-responsive">
+      </div>
+    </div>
+    <!-- clients -->
+    <div class="" *ngIf="(active_cat === 'clients')">
+      <div class="col-md-3 col-xs-12 mb-10" *ngFor="let client of clients">
+        <img [src]="client.url" alt="client" width="100%" height="315" class="img-responsive">
       </div>
     </div>
 

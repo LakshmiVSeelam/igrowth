@@ -20,9 +20,9 @@ export class CasestudysectionComponent{
 
   ngOnInit(): void {
     // debugger
-    setTimeout(function(){
-      slickSlider('.case-slider')
-    }, 1000)
+    // setTimeout(function(){
+    //   slickSlider('.case-slider')
+    // }, 1000)
     
   }
 

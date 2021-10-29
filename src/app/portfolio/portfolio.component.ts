@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import $ from '../../assets/js/vendor/jquery.js'
+import { DomSanitizer } from '@angular/platform-browser';
 
 
 @Component({
@@ -8,47 +9,51 @@ import $ from '../../assets/js/vendor/jquery.js'
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-  active_cat = 'all'
+  // gapi : any;
+
+  active_cat = 'graphic'
   categories = [
     // {'id': 'all', 'name': 'Our Creations'},
     {'id': 'graphic', 'name': 'Graphic Designs'},
     {'id': 'videos', 'name': 'After Effects'},
-    {'id': 'website', 'name': 'Clientele'}
+    {'id': 'clients', 'name': 'Clientele'}
     
     
   ]
 
   videos = []
+  clients = []
+  graphics = []
 
-  
-
-  graphic_img_arr = []
-  website_img_arr = []
-  final_img_arr = []
-
-
-  constructor() { 
+  constructor(private dom:DomSanitizer) { 
     
   }
 
   ngOnInit(): void {
     var self = this
-    let graphics_url = 'assets/data/graphic_img_data.json'
-    let videos_url = 'assets/data/video_data.json'
-    let website_url = 'assets/data/website_img_data.json'
+
+    $.getJSON('https://www.googleapis.com/drive/v3/files?q=%271SIr1Jn7Bn9Fja2CYCO2hEm5Ux7GsTMEk%27+in+parents&key=AIzaSyCBXe8STM0FlJjddUomYawcvMO7ZRk-YJ0').done(res => {
+      self.graphics = res.files
+      self.graphics.forEach(graphic => {
+        graphic.url = this.dom.bypassSecurityTrustResourceUrl(`https://drive.google.com/uc?id=${graphic.id}`)
+      });
+    })
+
+    $.getJSON('https://www.googleapis.com/drive/v3/files?q=%271TPi_eopuexQnDTJS_qkkrVyjFQ-bZoCi%27+in+parents&key=AIzaSyCBXe8STM0FlJjddUomYawcvMO7ZRk-YJ0').done(res => {
+      self.clients = res.files
+      self.clients.forEach(client => {
+        client.url = this.dom.bypassSecurityTrustResourceUrl(`https://drive.google.com/uc?id=${client.id}`)
+      });
+    })
     
-    // $.when(
-    //     $.getJSON(graphics_url),
-    //     $.getJSON(website_url),
-    //     $.getJSON(videos_url)
-    // ).done(function(res1, res2, res3) {
-    //   self.final_img_arr = res1[0].concat(res2[0])
-    //   self.videos = res3[0]
-    // });
+    
 
     $.getJSON('https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=UCYn6oNDCGVXfd9Mkg3umSSw&maxResults=25&key=AIzaSyAj8h3s8_Lphr0eo1rN80KYPjWZAbD9L0Q').done(res => {
+      res.items.pop()
       self.videos = res.items
-      console.log(res)
+      self.videos.forEach(video => {
+        video.url = this.dom.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${video.id.videoId}`)
+      });
     })
   }
 }

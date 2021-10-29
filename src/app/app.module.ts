@@ -62,7 +62,7 @@ import { BlogdetailComponent } from './blogdetail/blogdetail.component';
       {path: 'portfolio', component: PortfolioComponent},
       {path: 'services', component: ServicesComponent},
       {path: 'contact', component: ContactComponent},
-      { path: 'blog/:id', component: BlogdetailComponent },
+      {path: 'blog/:id', component: BlogdetailComponent },
       {path: '404', component: HomeComponent},
       {path: '**', component: HomeComponent}
     ]),
